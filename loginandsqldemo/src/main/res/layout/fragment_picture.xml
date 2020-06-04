@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PictureFragment">
+
+    <EditText
+        android:id="@+id/search_name"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:hint="请输入要搜索的药品名"
+        android:textSize="25dp"/>
+
+    <ImageView
+        android:id="@+id/search_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="300dp"
+        android:layout_toRightOf="@+id/search_name"
+        android:src="@drawable/search_bt" />
+
+    <WebView
+        android:id="@+id/chartsshow"
+        android:layout_marginTop="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="600dp" />
+
+
+</FrameLayout>

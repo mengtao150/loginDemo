@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MedicineFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+               <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/medicine_name"
+            android:layout_margin="30dp"
+            android:text="药品名："
+            android:layout_marginLeft="0dp"
+            />
+        <EditText
+
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:id="@+id/medicine_edit"
+            android:layout_toRightOf="@+id/medicine_name"
+            android:layout_margin="30dp"
+            android:hint="药物名"
+
+            />
+        <View  android:layout_height="1px"
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:background="#0A0909"
+            android:layout_below="@+id/medicine_name"
+            android:layout_margin="5sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/medicine_frequent"
+            android:layout_margin="30dp"
+            android:text="频度： "
+            android:layout_below="@+id/view1"
+            android:layout_marginLeft="0dp"
+            />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:id="@+id/frequency_edit"
+            android:layout_toRightOf="@+id/medicine_frequent"
+            android:layout_margin="30dp"
+            android:layout_below="@+id/view1"
+            android:hint="频度: "
+            android:textColor="#fff000"
+
+            />
+        <View  android:layout_height="1px"
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:background="#0A0909"
+            android:layout_below="@+id/medicine_frequent"
+            android:layout_margin="5sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/medicineother_name"
+            android:layout_margin="30dp"
+            android:text="药品别名： "
+            android:layout_below="@+id/view2"
+            android:layout_marginLeft="0dp"
+            />
+        <EditText
+            android:id="@+id/medicineother_edit"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@+id/medicineother_name"
+            android:layout_margin="30dp"
+            android:layout_below="@+id/view2"
+            android:hint="频度: "
+           />
+        <View  android:layout_height="1px"
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:background="#0A0909"
+            android:layout_below="@+id/medicineother_name"
+            android:layout_margin="5sp"
+            />
+<LinearLayout
+    android:id="@+id/linearlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/view3">
+    <Button
+        android:id="@+id/medicine_changebt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="药物修改"
+       />
+    <Button
+        android:id="@+id/medicine_delbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="药物删除"
+        android:layout_marginLeft="10dp"
+      />
+    <Button
+        android:id="@+id/medicine_searchbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="药物查询"
+        android:layout_marginLeft="10dp"
+       />
+    <Button
+        android:id="@+id/medicine_addbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="药物增加"
+        android:layout_marginLeft="10dp"
+         />
+</LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/linearlayout"/>
+
+    </RelativeLayout>
+</FrameLayout>

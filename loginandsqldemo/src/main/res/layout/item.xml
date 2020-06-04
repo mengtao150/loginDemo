@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_background">
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="药品名："
+        android:textSize="25sp"
+        android:textColor="#171817"
+
+        />
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="textview"
+        android:textSize="25sp"
+        android:textColor="#171817"
+       android:layout_alignParentRight="true"/>
+    <View  android:layout_height="1px"
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:background="#0A0909"
+        android:layout_below="@+id/item_name"
+        android:layout_margin="5sp"
+        />
+    <TextView
+        android:id="@+id/frequent_name"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="药品频度："
+        android:textSize="25sp"
+        android:textColor="#171817"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="15dp"
+
+        />
+    <TextView
+        android:id="@+id/item_frequent"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="textview"
+        android:textSize="25sp"
+        android:textColor="#171817"
+        android:layout_below="@+id/item_name"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentRight="true"/>
+    <View  android:layout_height="1px"
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:background="#0A0909"
+        android:layout_below="@+id/frequent_name"
+        android:layout_margin="5sp"
+        />
+
+    <TextView
+        android:id="@+id/frequency_text"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="35dp"
+        android:text="药品别名："
+        android:textColor="#171817"
+        android:textSize="25sp"
+
+        />
+
+    <TextView
+        android:id="@+id/item_othername"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/view2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="106dp"
+        android:layout_marginRight="5dp"
+        android:text="textview"
+        android:textColor="#171817"
+        android:textSize="25sp" />
+
+    <View  android:layout_height="1px"
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:background="#0A0909"
+        android:layout_below="@+id/item_name"
+        android:layout_margin="5sp"
+        />
+
+</RelativeLayout>

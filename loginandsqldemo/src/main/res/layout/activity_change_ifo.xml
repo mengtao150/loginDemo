@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/changeifobackground"
+    tools:context=".ChangeIfo">
+
+    <TextView
+        android:id="@+id/nameifo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="40sp"
+        android:layout_marginLeft="23dp"
+        android:text="用户名"
+        android:textColor="#1B1B1B"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@+id/nameifo"
+        android:hint="请修改用户名"
+        android:textSize="30sp" />
+
+    <View  android:layout_height="1px"
+        android:id="@+id/viewifo1"
+        android:layout_width="match_parent"
+        android:background="#0A0909"
+        android:layout_below="@+id/nameifo"
+        android:layout_margin="15sp"
+        />
+    <TextView
+        android:id="@+id/sexifo"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewifo1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="35dp"
+        android:text="性别"
+        android:textColor="#1B1B1B"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+    <EditText
+        android:id="@+id/edit_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请修改性别"
+        android:textSize="30sp"
+        android:layout_toRightOf="@+id/sexifo"
+        android:layout_below="@+id/viewifo1"
+        android:layout_marginTop="20dp"
+        />
+
+    <View  android:layout_height="1px"
+        android:id="@+id/viewifo2"
+        android:layout_width="match_parent"
+        android:background="#0A0909"
+        android:layout_below="@+id/sexifo"
+        android:layout_margin="15sp"
+        />
+    <TextView
+        android:id="@+id/phoneifo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机号"
+        android:textColor="#1B1B1B"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:layout_below="@+id/viewifo2"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="35dp"
+        />
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请修改手机号码"
+        android:textSize="30sp"
+        android:layout_toRightOf="@+id/phoneifo"
+        android:layout_below="@+id/viewifo2"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <View  android:layout_height="1px"
+        android:id="@+id/viewifo3"
+        android:layout_width="match_parent"
+        android:background="#0A0909"
+        android:layout_below="@+id/phoneifo"
+        android:layout_margin="15sp"
+        />
+    <TextView
+        android:id="@+id/worknumberifo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="职工号"
+        android:textColor="#1B1B1B"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:layout_below="@+id/viewifo3"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="35dp"
+        />
+    <EditText
+        android:id="@+id/edit_worknumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请修改职工号"
+        android:textSize="30sp"
+        android:layout_toRightOf="@+id/worknumberifo"
+        android:layout_below="@+id/viewifo3"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        />
+    <View  android:layout_height="1px"
+        android:id="@+id/viewifo4"
+        android:layout_width="match_parent"
+        android:background="#0A0909"
+        android:layout_below="@+id/worknumberifo"
+        android:layout_margin="15sp"
+        />
+    <Button
+    android:id="@+id/sure_bt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="确定修改"
+    android:background="#11FF00"
+    android:textColor="#EAEEEE"
+    android:textSize="20dp"
+    android:textStyle="italic"
+    android:layout_below="@+id/viewifo4"
+    android:layout_marginTop="100dp"
+    android:layout_marginLeft="50dp"
+    />
+    <Button
+        android:id="@+id/cancel_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:background="#11FF00"
+        android:textColor="#EAEEEE"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_below="@+id/viewifo4"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="230dp"
+        />
+
+
+</RelativeLayout>
